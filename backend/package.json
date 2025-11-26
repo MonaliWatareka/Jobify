@@ -10,7 +10,7 @@
     "type": "git",
     "url": "Jobify"
   },
-  "author": "Monali and chamod",
+  "author": "Monali and Chamod",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
