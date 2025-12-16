@@ -29,6 +29,13 @@ connection.once("open", () => {
   console.log("Mongodb connection success!");
 });
 
+// Middleware
+app.use(express.json());
+
+const jobseekerRouter = require("./routes/JobseekerRoute.js");
+
+app.use("/jobseeker", jobseekerRouter);
+
 //load/run in port
 app.listen(PORT, () => {
   console.log(`Server is up and running on port number: ${PORT}`);
